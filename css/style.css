@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Raleway:wght@600&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY */
+
+/* HEADER */
+
+.invisible {
+    visibility: hidden;
+    }
+
+.img2 {
+    display: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: #2b3035;
+}
+
+nav {
+    height: 110px;
+    width: 100%;
+    position: absolute;
+}
+
+nav ul li {
+    border-radius: 5px;
+}
+
+nav ul li :hover {
+    border-radius: 5px;
+    background-color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.botonColor {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  }
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+section {
+    background: #FFFFFF;
+}
+
+
+/* FOOTER */
+
+.pequenioEspacio {
+    padding: 6px 0 6px 0;
+}
+
+footer {
+    background-color: #2b3035;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:991px) {
+
+    #alineado {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        display: block;
+    }
+
+    nav ul li {
+        background-color: #2b3035;
+    }
+
+    .estiloA {
+        padding: 0 35.5px 0 35.5px;
+        margin: 6px 0 6px 0;
+    }
+
+    .estiloB {
+        padding: 0 5px 0 5px;
+    }
+
+    .estiloC {
+        padding: 0 9.4px 0 9.4px;
+        margin: 6px 0 6px 0;
+    }
+
+    .estiloD {
+        padding: 0 16px 0 16px;
+    }
+
+    .estiloE {
+        padding: 0 5px 0 5px;
+        margin: 6px 0 0 0;
+    }
+}
+
+
+@media(min-width:992px) {
+
+    #alineado {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+}
